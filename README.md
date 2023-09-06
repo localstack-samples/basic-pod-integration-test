@@ -34,6 +34,19 @@ aws_access_key_id=test
 aws_secret_access_key=test
 ```
 
+# Test Setup
+We need to generate a CloudPod with state in it for the test.
+
+With LocalStack running
+```shell
+make test-setup
+```
+Now restart LocalStack
+```shell
+make stop-localstack
+make start-localstack
+```
+
 ## Run Python Integration Test
 
 ```shell
